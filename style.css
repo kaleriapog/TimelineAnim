@@ -1,0 +1,91 @@
+body {
+    background-color: #EBDCB2;
+}
+.name-class {
+    background-color: #693D3D;
+    padding: 70px 50px;
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    height: 100vh;
+    color: #fff;
+}
+.name-class__item {
+    background-color: black;
+    width: 100px;
+    height: 50vh;
+    margin: 20px;
+}
+.progress1 {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.interactive-name-class {
+    padding: 50px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+label {
+    border: 1px solid grey;
+    display: block;
+}
+input {
+    width: 40px;
+    height: auto;
+    padding: 3px 10px;
+    background-color: transparent;
+    border: 2px solid yellowgreen;
+    outline: none;
+    margin: 0 5px;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.cube {
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+}
+
+input:focus {
+    border: 2px solid orange;
+}
+
+.interactive-name-class-descr {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.4;
+    font-style: italic;
+    padding: 20px;
+    color: #662E1C;
+}
+
+.value-default {
+    border-color: red;
+}
+
+.value-end {
+    border-color: yellow;
+}
+
+.value-duration {
+    border-color: purple;
+}
+
+.value-delay {
+    border-color: blue;
+}
+
+label .interactive-name-class-descr {
+    font-size: 22px;
+}

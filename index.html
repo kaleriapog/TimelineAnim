@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="interactive-name-class">
+    <h1>Описание</h1>
+    <ul>
+        <li><div class="cube value-default"></div><p>начальное положение блока (можно писать значение в рх, vh, vw, %)</p></li>
+        <li><div class="cube value-end"></div><p>конечное положение блока (можно писать значение в рх, vh, vw, %)</p></li>
+        <li><div class="cube value-duration"></div><p>продолжительность в еденицах - часть от продолжительности (например 1 или 2)</p></li>
+        <li><div class="cube value-delay"></div><p>задержка в еденицах - часть от продолжительности (например 1 или 2)</p></li>
+    </ul>
+    <p>
+        <label class="interactive-item-0"><span class="interactive-name-class-descr">Для блока 0</span> .fromTo(['.item-0'], {x: '<input class="input value-default" value="0" type="text">'}, {x: '<input class="input value-end" value="50vw" type="text">', duration: <input class="input value-duration" value="1" type="text">, delay: <input class="input value-delay" value="0" type="text">, ease: Linear.easeNone})</label>
+        <label class="interactive-item-1"><span class="interactive-name-class-descr">Для блока 1</span> .fromTo(['.item-1'], {x: '<input class="input value-default" value="0" type="text">'}, {x: '<input class="input value-end" value="50vw" type="text">', duration: <input class="input value-duration" value="1" type="text">, delay: <input class="input value-delay" value="0" type="text">, ease: Linear.easeNone})</label>
+        <label class="interactive-item-2"><span class="interactive-name-class-descr">Для блока 2</span> .fromTo(['.item-2'], {x: '<input class="input value-default" value="0" type="text">'}, {x: '<input class="input value-end" value="50vw" type="text">', duration: <input class="input value-duration" value="1" type="text">, delay: <input class="input value-delay" value="0" type="text">, ease: Linear.easeNone})</label>
+        <label class="interactive-item-3"><span class="interactive-name-class-descr">Для блока 3</span> .fromTo(['.item-3'], {x: '<input class="input value-default" value="0" type="text">'}, {x: '<input class="input value-end" value="50vw" type="text">', duration: <input class="input value-duration" value="1" type="text">, delay: <input class="input value-delay" value="0" type="text">, ease: Linear.easeNone})</label>
+        <span class="interactive-name-class-descr">Ниже в зеленом квадратике - duration (продолжительность всех анимаций в блоке) может быть любое число в пикселях, но само слово "рх" не нужно, просто укажити число или укажите "100%" - будет равно высоте экрана </span><br>
+        <label>new ScrollMagic.Scene({ triggerElement: '.name-class',  triggerHook: 'onLeave', duration: '<input class="input value-duration-scene" value="1000" type="text">' })</label>
+    </p>
+</section>
+<section class="name-class">
+    <div class="progress1"></div>
+    <div class="name-class__item item-0">0</div>
+    <div class="name-class__item item-1">1</div>
+    <div class="name-class__item item-2">2</div>
+    <div class="name-class__item item-3">3</div>
+</section>
+<div>
+    <img src="./img.JPG" alt="img">
+</div>
+<script src="js/ScrollMagic.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/debug.addIndicators.min.js"></script>
+<script src="js/animation.gsap.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
