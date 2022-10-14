@@ -36,6 +36,17 @@
 <section class="empty">
     <h2>Ниже еще что-то есть</h2>
 </section>
+<section class="interactive-name-class2">
+    <h1>Описание для карточек ниже</h1>
+    <ul>
+        <li><span class="interactive-name-class-descr">Если вы внесете изменения тут, то одновременной анимации в карточках не будет </span></li>
+        <li><input class="input card-value-default" value="100vh" type="text"><p>начальное положение карточки, кроме первой (можно писать значение в рх, vh, vw, %)</p></li>
+        <li><input class="input card-value-end" value="0" type="text"><p>конечное положение карточки (можно писать значение в рх, vh, vw, %)</p></li>
+        <li><input class="input card-value-scale" value="0.8" type="text"><p>уменьшение карточки, кроме последней (размер * на значение типа 0.5)</p></li>
+        <li><input class="input card-value-pos" value="-10vh" type="text"><p>когда карточка будет уменьшаться, она может еще выполнить движение по оси У (можно писать значение в рх, vh, vw, %)</p></li>
+        <li><input class="input card-value-duration" value="2000" type="text"><p>продолжительность всех анимаций в блоке, может быть любое число в пикселях, но само слово "рх" не нужно, просто укажити число или укажите "100%" - будет равно высоте экрана </p></li>
+    </ul>
+</section>
 <section class="name-class2">
     <div class="progress1"></div>
     <ul class="name-class2-list">
@@ -77,9 +88,9 @@
         </li>
     </ul>
 </section>
-<div>
-    <img src="./img.JPG" alt="img">
-</div>
+<section class="empty">
+    <h2>END</h2>
+</section>
 <script src="js/ScrollMagic.js"></script>
 <script src="js/gsap.min.js"></script>
 <script src="js/debug.addIndicators.min.js"></script>
