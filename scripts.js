@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     let controller = new ScrollMagic.Controller();
     let timelineSection = new TimelineMax();
-    let allInput = document.querySelectorAll('.input')
+    let timelineSection2 = new TimelineMax();
+    let allInput = document.querySelectorAll('.interactive-name-class .input')
 
     timelineSection
         .fromTo(['.item-0'], {x: '0'}, {x: '50vw', duration: 1, delay: 0, ease: Linear.easeNone})
@@ -63,4 +64,23 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+
+    // for  name-class2
+    timelineSection2
+            .fromTo(['.card-0'], {}, {y: '-10vh', transform: 'scale(0.8)', duration: 1, delay: 0, ease: Linear.easeNone})
+            .fromTo(['.card-1'], {y: '100vh'}, {y: '0', duration: 1, delay: 0, ease: Linear.easeNone}, '<')
+            .fromTo(['.card-1'], {}, {y: '-10vh', transform: 'scale(0.8)', duration: 1, delay: 0, ease: Linear.easeNone})
+            .fromTo(['.card-2'], {y: '100vh'}, {y: '0', duration: 1, delay: 0, ease: Linear.easeNone}, '<')
+            .fromTo(['.card-2'], {}, {y: '-10vh', transform: 'scale(0.8)', duration: 1, delay: 0, ease: Linear.easeNone})
+            .fromTo(['.card-3'], {y: '100vh'}, {y: '0', duration: 1, delay: 0, ease: Linear.easeNone}, '<');
+
+        let sceneAnim2 = new ScrollMagic.Scene({ triggerElement: '.name-class2',  triggerHook: 'onLeave', duration: '1000', tweenChanges: true }) //в duration (продолжительность) может быть любое число в пикселях, но само слово "рх" не нужно, просто укажити число. ну или укажите "100%" - будет равно высоте экрана
+            .setPin('.name-class2')
+            .setTween(timelineSection2)
+            .on("progress", function (e) {
+                let progress = (e.progress * 100);
+                    document.querySelector('.name-class2 .progress1').innerHTML =`<p> Прогресс ${progress.toFixed(0)} из 100</p>`
+            })
+            .addIndicators({name: "мой second блок"})
+            .addTo(controller);
 })
